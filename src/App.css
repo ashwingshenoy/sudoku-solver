@@ -1,0 +1,33 @@
+.sudoku {
+  border-collapse: collapse;
+  margin: 5em auto;
+}
+.row>.cell {
+  border: 1px solid rgba(0, 0, 0, .25);
+  height: 2.5em;
+  width: 2.5em;
+}
+.cell.border-top {
+  border-top: 2px solid black;
+}
+.cell.border-right {
+  border-right: 2px solid black;
+}
+.cell.border-bottom {
+  border-bottom: 2px solid black;
+}
+.cell.border-left {
+  border-left: 2px solid black;
+}
+.cell> input {
+  border: none;
+  font-weight: 700;
+  height: 60%;
+  outline: none;
+  padding: 0.25em;
+  text-align: center;
+  width: 60%;
+}
+.cell.invalid {
+  border-color: red;
+}
