@@ -59,7 +59,7 @@ export class Sudoku {
             curValue = Number(value);
         }
         if (prevValue !== curValue) {
-            cell.value = value;
+            cell.value = curValue;
             this.rows[cell.row].updateValue(prevValue, curValue, cell.col);
             this.cols[cell.col].updateValue(prevValue, curValue, cell.row);
             this.groups[cell.group].updateValue(prevValue, curValue, this._getGroupIndex(cell.row, cell.col));

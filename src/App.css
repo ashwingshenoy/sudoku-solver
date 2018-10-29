@@ -1,33 +1,35 @@
-.sudoku {
-  border-collapse: collapse;
-  margin: 5em auto;
+* {
+    box-sizing: border-box;
 }
-.row>.cell {
-  border: 1px solid rgba(0, 0, 0, .25);
-  height: 2.5em;
-  width: 2.5em;
+body {
+    font-family: 'Comic Sans MS';
 }
-.cell.border-top {
-  border-top: 2px solid black;
+.display-flex {
+    display: flex;
+    justify-content: space-around;
 }
-.cell.border-right {
-  border-right: 2px solid black;
+.display-flex > div {
+    padding: 2em;
 }
-.cell.border-bottom {
-  border-bottom: 2px solid black;
+
+.display-flex > .fill {
+    flex: 1;
 }
-.cell.border-left {
-  border-left: 2px solid black;
+
+button.btn {
+    border: 1px solid black;
+    border-radius: 15%;
+    cursor: pointer;
+    height: 2.5em;
+    margin: 1em;
+    padding: 0.25em;
 }
-.cell> input {
-  border: none;
-  font-weight: 700;
-  height: 60%;
-  outline: none;
-  padding: 0.25em;
-  text-align: center;
-  width: 60%;
+
+.btn:hover {
+    background-color: lightgray;
+    box-shadow: .25em .25em rgba(0, 0, 0, .5);
 }
-.cell.invalid {
-  border-color: red;
+
+.text-center {
+    text-align: center;
 }

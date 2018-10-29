@@ -1,7 +1,16 @@
 {
-  "name": "sudoku",
+  "name": "sudoku-solver",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Ashwin G Shenoy",
+    "email": "ashgsh94@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashwingshenoy/sudoku-solver.git"
+  },
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
